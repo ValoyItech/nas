@@ -153,6 +153,24 @@ h3{font-size:21px}
   .footer-main{grid-template-columns:1fr}
   .footer-brand{grid-column:auto}
 }
+
+
+/* Prevent sideways shift on mobile */
+html, body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+@media (max-width: 900px){
+  html { scroll-padding-top: 72px; }
+  .shop-preview-section { background-attachment: scroll; }
+}
+
+/* Stabilise full-height hero on mobile */
+.hero-slider {
+  min-height: calc(100vh - 82px);
+  min-height: calc(100svh - 72px);
+}
 </style>
 </head>
 <body>
