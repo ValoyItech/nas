@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Automotive locksmith services in Malamulele and Pretoria. Car key cutting, key and remote programming, ECU programming, key reader replacement and household locksmith services.">
+<meta name="theme-color" content="#101820">
+<meta name="robots" content="index,follow">
+<title>National Auto Service Key | Automotive Locksmith & ECU Programming</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="icon" href="assets/images/vehicle-keys-reference.png" type="image/png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#101820;--ink2:#17232d;--yellow:#f5bd26;--yellow2:#ffd45c;--muted:#68737d;--paper:#f5f6f7;--white:#fff;--line:#e6e9ec;--radius:18px;--shadow:0 18px 50px rgba(13,25,36,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;line-height:1.65}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.container{width:min(1160px,calc(100% - 44px));margin:auto}
+.site-header{height:82px;padding:0 max(22px,calc((100% - 1160px)/2));display:flex;align-items:center;justify-content:space-between;background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 5px 24px rgba(0,0,0,.06)}
+
+/* Brand/Logo styling */
+.brand{display:flex;align-items:center;gap:11px;line-height:1.05}
+.brand-logo{height:46px;width:auto;object-fit:contain;display:block}
+.brand strong{font:800 15px Manrope,sans-serif;letter-spacing:.7px;display:block}
+.brand small{font-size:11px;letter-spacing:3px;font-weight:700;color:#69737c;display:block;margin-top:5px}
+
+.desktop-nav{display:flex;align-items:center;gap:27px}
+.nav-link{font-size:13px;font-weight:700;color:#53606a;transition:.2s}
+.nav-link:hover,.nav-link.active{color:#111}
+.nav-link.active{position:relative}
+.nav-link.active:after{content:'';position:absolute;bottom:-10px;left:0;width:20px;height:3px;background:var(--yellow)}
+.header-call{display:flex;align-items:center;gap:9px;background:var(--ink);color:#fff;padding:12px 17px;border-radius:9px;font-weight:700;font-size:13px}
+.header-call i{color:var(--yellow)}
+.menu-toggle,.menu-close{display:none;border:0;background:none;font-size:23px;color:var(--ink);cursor:pointer}
+.mobile-overlay{display:none}.mobile-sidebar{display:none}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#b17d00;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.eyebrow:before{content:'';width:25px;height:2px;background:var(--yellow)}
+h1,h2,h3,h4{font-family:Manrope,sans-serif;line-height:1.15;margin:0 0 18px;letter-spacing:-.7px}
+h1{font-size:clamp(40px,5.5vw,68px);font-weight:800}
+h2{font-size:clamp(30px,4vw,43px);font-weight:800}
+h3{font-size:21px}
+.section{padding:92px 0}
+.section-head{max-width:680px;margin-bottom:40px}
+.section-head p,.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:9px;padding:14px 21px;font-size:13px;font-weight:800;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--yellow);color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-outline{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-block{width:100%}
+
+/* ===== HERO SLIDER ===== */
+.hero-slider{position:relative;min-height:calc(100vh - 82px);padding:0;overflow:hidden;color:#fff;background:#101820}
+.hero-slider .hero-slides{position:absolute;inset:0}
+.hero-slide{position:absolute;inset:0;display:flex;align-items:center;background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0;transform:scale(1.06);transition:opacity .9s ease,transform 1.2s ease;pointer-events:none}
+.hero-slide::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,17,24,.94) 0%,rgba(9,17,24,.72) 45%,rgba(9,17,24,.28) 100%)}
+.hero-slide.is-active{opacity:1;transform:scale(1);pointer-events:auto;z-index:2}
+
+.hero-slide-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 80px 22px;
+}
+.hero-copy { max-width: 640px; }
+.hero .eyebrow { color: var(--yellow2); }
+.hero-copy h1 { margin: 22px 0 18px; }
+.hero-copy h1 span { color: var(--yellow); }
+.hero-copy p { font-size: 17px; color: #d4dbe0; max-width: 560px; margin: 0 0 28px; }
+.hero-actions { display: flex; gap: 13px; flex-wrap: wrap; }
+
+.hero-arrow{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(0,0,0,.35);color:#fff;display:grid;place-items:center;cursor:pointer;z-index:4;transition:background .25s}
+.hero-arrow:hover{background:rgba(0,0,0,.65)}
+.hero-arrow.prev{left:18px}.hero-arrow.next{right:18px}
+.hero-dots{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:4}
+.hero-dots button{width:32px;height:4px;border-radius:2px;border:0;background:rgba(255,255,255,.4);cursor:pointer;transition:background .3s,width .3s}
+.hero-dots button.is-active{background:var(--yellow);width:48px}
+
+/* ===== QUICK STRIP ===== */
+.quick-strip{background:var(--yellow);padding:22px 0}
+.quick-strip-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.quick-strip strong{font:800 19px Manrope}
+.quick-strip p{margin:3px 0 0;font-size:13px}
+.quick-strip .btn{background:var(--ink);color:#fff;white-space:nowrap}
+
+/* ===== PHOTO SERVICE CARDS ===== */
+.photo-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.photo-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.photo-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.photo-card-media{position:relative;aspect-ratio:4/3;overflow:hidden}
+.photo-card-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s;display:block}
+.photo-card:hover .photo-card-media img{transform:scale(1.06)}
+.photo-card-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.photo-card-body .tag{align-self:flex-start;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:#fff4d1;color:#7a5a00;padding:4px 9px;border-radius:999px;font-weight:700}
+.photo-card-body h3{font-size:20px;margin:6px 0 2px}
+.photo-card-body p{color:var(--muted);font-size:14px;margin:0 0 14px}
+.photo-card-body .text-link{margin-top:auto}
+.text-link{font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:8px}
+.text-link i{color:#c18b08}
+
+/* ===== SHOP PREVIEW (DARK THEME) ===== */
+.shop-preview-section {
+  background: linear-gradient(rgba(10, 16, 24, 0.92), rgba(10, 16, 24, 0.92)), url('https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&w=1800&q=80') center/cover fixed;
+  color: #fff;
+}
+.shop-preview-section .eyebrow { color: var(--yellow2); }
+.shop-preview-section h2 { color: #fff; }
+.shop-preview-section .section-head p { color: #b8c1c8; }
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product-card{background:#1c2731;border-radius:var(--radius);overflow:hidden;border:1px solid #2a3742;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 18px 50px rgba(0,0,0,.4);border-color:#3a4752}
+.product-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:#fff;padding:20px}
+.product-media img{width:100%;height:100%;object-fit:contain;transition:transform .6s;display:block}
+.product-card:hover .product-media img{transform:scale(1.06)}
+.product-body{padding:20px;display:flex;flex-direction:column;flex:1;border-top:1px solid #2a3742}
+.product-body .tag{align-self:flex-start;font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:#29343d;color:var(--yellow2);padding:4px 8px;border-radius:999px;font-weight:700;margin-bottom:10px}
+.product-body h3{font-size:16px;margin:0 0 6px;font-weight:800;color:#fff}
+.product-body p{color:#b8c1c8;font-size:13px;margin:0 0 15px;line-height:1.4}
+.product-body .price{font-family:Manrope;font-size:18px;font-weight:800;color:var(--yellow);margin-bottom:15px}
+.product-body .btn{width:100%;margin-top:auto}
+
+/* ===== WHY CHOOSE US COLLAGE (FIXED SPACING) ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.collage{position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.collage-main{grid-column:1/2;grid-row:1/3;width:100%;height:100%;object-fit:cover;border-radius:18px}
+.collage-side{display:flex;flex-direction:column;gap:16px}
+.collage-small{width:100%;height:240px;object-fit:cover;border-radius:14px}
+.collage .photo-tag{background:var(--yellow);color:var(--ink);border-radius:14px;padding:24px;font-weight:800;font-size:15px;line-height:1.4;display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.08);flex:1}
+.check-list{list-style:none;padding:0;margin:25px 0;display:grid;gap:13px}
+.check-list li{display:flex;gap:11px;align-items:flex-start;font-size:14px;font-weight:600}
+.check-list i{color:#bd8908;margin-top:5px}
+
+/* ===== LOCATIONS ===== */
+.dark-section{background:var(--ink);color:#fff}
+.dark-section .muted{color:#b8c1c8}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:35px}
+.stat{border-left:3px solid var(--yellow);padding:8px 0 8px 17px}
+.stat strong{font:800 25px Manrope;display:block}
+.stat span{font-size:12px;color:#b8c1c8}
+.locations{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.location-card{padding:27px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink)}
+.location-card i{color:#b98506;margin-right:8px}
+.location-card p{font-size:14px;color:var(--muted);margin:8px 0}
+.location-card h3{margin-bottom:8px}
+.dark-section .location-card{border-color:#29343d}
+.dark-section .location-card .text-link{color:var(--yellow)}
+
+/* ===== FORM ===== */
+.feature-band{background:#f6f7f8}
+.form-panel{background:#fff;border-radius:20px;padding:32px;box-shadow:var(--shadow);color:var(--ink)}
+.form-panel h3{font-size:25px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:800}
+.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #dfe3e6;border-radius:9px;background:#fafbfc;outline:none;font-size:13px;color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#d6a11a;box-shadow:0 0 0 3px rgba(245,189,38,.15)}
+.field textarea{min-height:95px;resize:vertical}
+.form-note{font-size:11px;color:var(--muted);margin:12px 0 17px}
+
+/* ===== FOOTER ===== */
+.site-footer{background:#0b1218;color:#fff;padding:60px 0 0}
+.footer-main{width:min(1160px,calc(100% - 44px));margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.3fr;gap:35px;padding-bottom:42px}
+.brand-light small{color:#aeb8bf}
+
+/* White circular badge behind the footer logo, slightly enlarged */
+.footer-brand .brand-logo{
+  height:70px;
+  width:70px;
+  padding:4px;
+  background:#fff;
+  border-radius:50%;
+  object-fit:contain;
+  flex-shrink:0;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+}
+
+.footer-brand p,.footer-main p{font-size:12px;color:#aeb8bf;line-height:1.8}
+.footer-main h4{font-size:14px;margin:4px 0 17px}
+.footer-main>div:not(:first-child)>a{display:block;font-size:12px;color:#b9c2c8;margin:10px 0}
+.footer-main a:hover{color:var(--yellow)}
+.social-row{display:flex;gap:9px;margin-top:18px}
+.social-row a{width:34px;height:34px;display:grid;place-items:center;border:1px solid #39434a;border-radius:50%;color:var(--yellow)}
+.footer-bottom{border-top:1px solid #263039;padding:18px max(22px,calc((100% - 1160px)/2));display:flex;justify-content:space-between;gap:15px;color:#84919a;font-size:11px}
+.floating-wa{position:fixed;right:22px;bottom:22px;width:55px;height:55px;border-radius:50%;background:#20bd5a;color:#fff;display:grid;place-items:center;font-size:27px;z-index:900;box-shadow:0 8px 25px rgba(0,0,0,.2)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .desktop-nav,.header-call{display:none}
+  .menu-toggle{display:block}
+  .site-header{height:72px}
+  .mobile-overlay{display:block;position:fixed;inset:0;background:rgba(5,12,18,.55);z-index:1100;opacity:0;visibility:hidden;transition:.25s}
+  .mobile-sidebar{display:flex;position:fixed;z-index:1101;right:0;top:0;bottom:0;width:min(340px,88vw);background:#fff;flex-direction:column;padding:22px;transform:translateX(105%);transition:.3s;box-shadow:-10px 0 40px rgba(0,0,0,.15)}
+  body.menu-open .mobile-sidebar{transform:translateX(0)}
+  body.menu-open .mobile-overlay{opacity:1;visibility:visible}
+  .sidebar-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:28px;border-bottom:1px solid var(--line)}
+  .menu-close{display:block}
+  
+  .mobile-nav{display:grid;gap:0;padding:18px 0}
+  .mobile-nav .nav-link{display:flex;align-items:center;gap:15px;padding:15px 5px;border-bottom:1px solid #edf0f2;font-size:15px}
+  .mobile-nav .nav-link i{width:20px;text-align:center;color:#a0aab2;font-size:16px}
+  .mobile-nav .nav-link.active i{color:var(--yellow)}
+  .mobile-nav .nav-link.active:after{display:none}
+
+  .sidebar-contact{margin-top:auto;background:#f5f6f7;border-radius:14px;padding:17px}
+  .sidebar-contact p{font-size:13px;font-weight:800}
+  .sidebar-phone{display:block;text-align:center;font-size:13px;font-weight:800;margin-top:13px}
+  .hero-slider{min-height:calc(100vh - 72px)}
+  .photo-cards{grid-template-columns:1fr 1fr}
+  .product-grid{grid-template-columns:1fr 1fr}
+  .split{gap:35px}
+  .footer-main{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .container{width:min(100% - 34px,1160px)}
+  .section{padding:66px 0}
+  .hero-slide::before{background:linear-gradient(180deg,rgba(9,17,24,.75) 0%,rgba(9,17,24,.92) 100%)}
+  .hero-slide-inner{padding:90px 17px 110px}
+  .hero-copy h1{font-size:43px}
+  .hero-copy p{font-size:15px}
+  .hero-actions .btn{width:100%}
+  .hero-arrow{display:none}
+  .quick-strip-inner{align-items:flex-start;flex-direction:column}
+  .quick-strip .btn{width:100%}
+  .photo-cards{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+  
+  .collage{grid-template-columns:1fr;}
+  .collage-main{grid-column:1/2;grid-row:auto;height:300px}
+  .collage-side{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .collage-small{height:180px}
+  
+  .stats{gap:8px}
+  .stat strong{font-size:21px}
+  .stat span{font-size:10px}
+  .locations{grid-template-columns:1fr}
+  .form-panel{padding:22px}
+  .form-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .footer-main{grid-template-columns:1fr 1fr;gap:25px}
+  .footer-brand{grid-column:1/-1}
+  .footer-bottom{flex-direction:column}
+}
+@media(max-width:390px){
+  .footer-main{grid-template-columns:1fr}
+  .footer-brand{grid-column:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="National Auto Service Key home">
+    <img src="assets/images/logo.png" alt="National Auto Service Key Logo" class="brand-logo">
+    <span><strong>NATIONAL AUTO</strong><small>SERVICE KEY</small></span>
+  </a>
+  <nav class="desktop-nav">
+    <a class="nav-link active" href="index.html">Home</a>
+    <a class="nav-link" href="services.html">Services</a>
+    <a class="nav-link" href="about.html">About Us</a>
+    <a class="nav-link" href="shop.html">Shop</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+  </nav>
+  <a class="header-call" href="tel:+27710756990"><i class="fa-solid fa-phone"></i><span>071 075 6990</span></a>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+</header>
+<div class="mobile-overlay"></div>
+<aside class="mobile-sidebar" aria-hidden="true">
+  <div class="sidebar-top">
+    <a class="brand" href="index.html">
+      <img src="assets/images/logo.png" alt="National Auto Service Key Logo" class="brand-logo">
+      <span><strong>NATIONAL AUTO</strong><small>SERVICE KEY</small></span>
+    </a>
+    <button class="menu-close" aria-label="Close navigation"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  
+  <nav class="mobile-nav">
+    <a class="nav-link active" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a class="nav-link" href="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+    <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+    <a class="nav-link" href="shop.html"><i class="fa-solid fa-cart-shopping"></i> Shop</a>
+    <a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </nav>
+  
+  <div class="sidebar-contact">
+    <p>Need help with a key?</p>
+    <a class="btn btn-primary btn-block" href="https://wa.me/27710756990?text=Hello%20National%20Auto%20Service%20Key%2C%20I%20need%20assistance." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+    <a class="sidebar-phone" href="tel:+27710756990"><i class="fa-solid fa-phone"></i> 071 075 6990</a>
+  </div>
+</aside>
+
+<main>
+
+<section class="hero hero-slider" aria-roledescription="carousel" aria-label="Featured services">
+  <div class="hero-slides">
+    <!-- Slide 1 -->
+    <article class="hero-slide is-active" data-bg="assets/images/hero1.avif">
+      <div class="hero-slide-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Automotive keys &amp; locksmith</span>
+          <h1>Lost your car keys?<br><span>We can help.</span></h1>
+          <p>Replacement keys cut and programmed for most vehicle makes. Call or WhatsApp us and we'll take it from there.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quick-enquiry"><i class="fa-solid fa-paper-plane"></i> Request Assistance</a>
+            <a class="btn btn-outline" href="tel:+27710756990"><i class="fa-solid fa-phone"></i> Call 071 075 6990</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Slide 2 -->
+    <article class="hero-slide" data-bg="assets/images/her2.jpg">
+      <div class="hero-slide-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Remote &amp; key fob programming</span>
+          <h1>Remote not working?<br><span>Get it sorted.</span></h1>
+          <p>We program, pair and repair electronic car keys and remotes so your car recognises your key again.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quick-enquiry"><i class="fa-solid fa-paper-plane"></i> Book Programming</a>
+            <a class="btn btn-outline" href="https://wa.me/27710756990?text=Hi%2C%20my%20car%20remote%20is%20not%20working." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Slide 3 -->
+    <article class="hero-slide" data-bg="assets/images/hero3.jpg">
+      <div class="hero-slide-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Car electronics &amp; ECU</span>
+          <h1>Car not starting?<br><span>We check the electronics.</span></h1>
+          <p>ECU programming, key-reader replacement and immobiliser help for vehicles that won't recognise their keys.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="services.html#ecu"><i class="fa-solid fa-microchip"></i> See ECU Services</a>
+            <a class="btn btn-outline" href="tel:+27710756990"><i class="fa-solid fa-phone"></i> Talk to Us</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Slide 4 -->
+    <article class="hero-slide" data-bg="assets/images/hero1.jpg">
+      <div class="hero-slide-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Household locksmith</span>
+          <h1>Locked out at home?<br><span>We can assist.</span></h1>
+          <p>House keys, replacement keys, door locks and everyday lock problems — handled by the same team.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quick-enquiry"><i class="fa-solid fa-paper-plane"></i> Request Help</a>
+            <a class="btn btn-outline" href="https://wa.me/27710756990?text=Hi%2C%20I%20need%20help%20with%20a%20house%20lock." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Slide 5: SHOP -->
+    <article class="hero-slide" data-bg="assets/images/hero4.jpg">
+      <div class="hero-slide-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Spares &amp; Accessories</span>
+          <h1>Need a battery or spare?<br><span>Shop our spares.</span></h1>
+          <p>We stock CR batteries for remotes, household key blanks, and replacement shells. Order online or visit us.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="shop.html"><i class="fa-solid fa-cart-shopping"></i> Visit Shop</a>
+            <a class="btn btn-outline" href="https://wa.me/27710756990?text=Hi%2C%20I%20have%20a%20question%20about%20shop%20items." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Enquire</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <button class="hero-arrow prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="hero-arrow next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="hero-dots" role="tablist" aria-label="Slide selection"></div>
+</section>
+
+<section class="quick-strip">
+  <div class="container quick-strip-inner">
+    <div>
+      <strong>Need a replacement key or programming?</strong>
+      <p>Send us your vehicle details and tell us how we can assist.</p>
+    </div>
+    <a class="btn" href="#quick-enquiry">Get started <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">What we do</span>
+      <h2>Key solutions for your car and home.</h2>
+      <p>Whether your remote has stopped working, you need a spare key, or you need help with a lock — contact our team for assistance.</p>
+    </div>
+    <div class="photo-cards">
+      <article class="photo-card" data-aos="fade-up">
+        <div class="photo-card-media"><img src="assets/images/hero4.jpg" alt="Car keys on a keyring" loading="lazy"></div>
+        <div class="photo-card-body">
+          <span class="tag">Car key cutting</span>
+          <h3>Need a spare car key?</h3>
+          <p>We cut replacement and spare keys for most vehicles.</p>
+          <a class="text-link" href="services.html#car-keys">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="photo-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="photo-card-media"><img src="assets/images/her2.jpg" alt="Car remote key fob" loading="lazy"></div>
+        <div class="photo-card-body">
+          <span class="tag">Key &amp; remote programming</span>
+          <h3>Remote not working?</h3>
+          <p>We program and pair electronic keys and remotes.</p>
+          <a class="text-link" href="services.html#programming">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="photo-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="photo-card-media"><img src="assets/images/hero3.jpg" alt="Car engine bay / electronics" loading="lazy"></div>
+        <div class="photo-card-body">
+          <span class="tag">ECU programming</span>
+          <h3>Car electronics trouble?</h3>
+          <p>ECU programming and immobiliser support for compatible vehicles.</p>
+          <a class="text-link" href="services.html#ecu">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="photo-card" data-aos="fade-up">
+        <div class="photo-card-media"><img src="assets/images/smartk.jpg" alt="Car dashboard / ignition area" loading="lazy"></div>
+        <div class="photo-card-body">
+          <span class="tag">Key reader replacement</span>
+          <h3>Car not recognising key?</h3>
+          <p>Assistance with faulty key readers and recognition components.</p>
+          <a class="text-link" href="services.html#key-reader">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="photo-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="photo-card-media"><img src="assets/images/houselock.jpg" alt="House door lock" loading="lazy"></div>
+        <div class="photo-card-body">
+          <span class="tag">Household locksmith</span>
+          <h3>House lock problems?</h3>
+          <p>House keys, replacement locks and everyday lock fixes.</p>
+          <a class="text-link" href="services.html#home-locksmith">Explore <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="photo-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="photo-card-media"><img src="assets/images/locked.jpg" alt="Car on the road at dusk" loading="lazy"></div>
+        <div class="photo-card-body">
+          <span class="tag">Lockout assistance</span>
+          <h3>Locked out?</h3>
+          <p>Contact us when you're locked out or a key is missing or broken.</p>
+          <a class="text-link" href="contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHOP PREVIEW SECTION (DARK THEME) ===== -->
+<section class="section shop-preview-section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up" style="display: flex; justify-content: space-between; align-items: flex-end; max-width: 100%;">
+      <div>
+        <span class="eyebrow">Shop Spares & Accessories</span>
+        <h2>Need a battery or key blank?</h2>
+        <p>We stock remote batteries, household keys, and vehicle key shells.</p>
+      </div>
+      <a class="btn btn-primary" href="shop.html" style="margin-bottom: 10px;">Visit Full Shop <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <article class="product-card" data-aos="fade-up">
+        <div class="product-media">
+          <img src="assets/images/batteries.png" alt="Car remote battery" loading="lazy">
+        </div>
+        <div class="product-body">
+          <span class="tag">Batteries</span>
+          <h3>Car Remote Batteries</h3>
+          <p>CR2032, CR2025, CR1620 and more.</p>
+          <div class="price">From R40</div>
+          <a class="btn btn-primary" href="https://wa.me/27710756990?text=Hi%2C%20I%20need%20a%20battery%20for%20my%20car%20remote." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order</a>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="product-media">
+          <img src="assets/images/keyys.png" alt="Household key blank" loading="lazy">
+        </div>
+        <div class="product-body">
+          <span class="tag">Household Keys</span>
+          <h3>House Key Blanks</h3>
+          <p>Standard and security door key blanks.</p>
+          <div class="price">From R30</div>
+          <a class="btn btn-primary" href="https://wa.me/27710756990?text=Hi%2C%20I%20need%20a%20house%20key%20cut." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order</a>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="product-media">
+          <img src="assets/images/shells.png" alt="Car key shell" loading="lazy">
+        </div>
+        <div class="product-body">
+          <span class="tag">Automotive Spares</span>
+          <h3>Car Key Shells</h3>
+          <p>Replace your broken key case easily.</p>
+          <div class="price">From R150</div>
+          <a class="btn btn-primary" href="https://wa.me/27710756990?text=Hi%2C%20I%20need%20a%20replacement%20car%20key%20shell." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="collage" data-aos="fade-right">
+      <img class="collage-main" src="assets/images/hero1.jpg" alt="Automotive technician working on a vehicle">
+      <div class="collage-side">
+        <img class="collage-small" src="assets/images/hero3.jpg" alt="Keys and tools on a workbench">
+        <div class="photo-tag">Practical solutions for keys, remotes &amp; locks.</div>
+      </div>
+    </div>
+    <div data-aos="fade-left">
+      <span class="eyebrow">Why choose us</span>
+      <h2>Make getting help simple.</h2>
+      <p class="muted">Tell us what vehicle you drive, what the problem is and where you are. We'll use those details to understand your request and discuss the next step with you.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-circle-check"></i> Car key cutting and programming</li>
+        <li><i class="fa-solid fa-circle-check"></i> ECU and key reader-related services</li>
+        <li><i class="fa-solid fa-circle-check"></i> Household locksmith assistance</li>
+        <li><i class="fa-solid fa-circle-check"></i> Convenient contact via phone and WhatsApp</li>
+      </ul>
+      <a class="btn btn-dark" href="about.html">More about us <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-section">
+  <div class="container">
+    <div class="split">
+      <div data-aos="fade-right">
+        <span class="eyebrow">Where to find us</span>
+        <h2>Serving Malamulele and Pretoria.</h2>
+        <p class="muted">National Auto Service Key has listed service locations in Limpopo and Gauteng. Contact us to confirm availability and the best way to assist you.</p>
+        <div class="stats">
+          <div class="stat"><strong>2</strong><span>Listed locations</span></div>
+          <div class="stat"><strong>Auto</strong><span>Key solutions</span></div>
+          <div class="stat"><strong>Home</strong><span>Locksmith services</span></div>
+        </div>
+      </div>
+      <div class="locations" data-aos="fade-left">
+        <div class="location-card">
+          <h3><i class="fa-solid fa-location-dot"></i> Malamulele</h3>
+          <p>Collins Chabane Dr, Malamulele-A, Malamulele, 0982</p>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=National+Auto+Service+Key+Malamulele" target="_blank" rel="noopener">Get directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="location-card">
+          <h3><i class="fa-solid fa-location-dot"></i> Pretoria</h3>
+          <p>47 Robyn St, Klerksoord AH, Pretoria, 0200</p>
+          <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=47+Robyn+St+Klerksoord+Pretoria" target="_blank" rel="noopener">Get directions <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quick-enquiry">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Start here</span>
+      <h2>Request key or locksmith assistance.</h2>
+      <p class="muted">A few details help us understand your situation before we respond. For vehicle enquiries, include the make, model and year if you know them.</p>
+      <ul class="check-list">
+        <li><i class="fa-solid fa-check"></i> Choose the service you need</li>
+        <li><i class="fa-solid fa-check"></i> Add your vehicle details</li>
+        <li><i class="fa-solid fa-check"></i> Send your enquiry through WhatsApp</li>
+      </ul>
+      <p><strong>Prefer to speak to someone?</strong><br><a class="text-link" href="tel:+27710756990">Call 071 075 6990 <i class="fa-solid fa-phone"></i></a></p>
+    </div>
+    <div class="form-panel" data-aos="fade-up">
+      <span class="eyebrow">Quick enquiry</span>
+      <h3>Tell us what you need</h3>
+      <p class="muted" style="font-size:13px;margin-top:-8px">Complete a few details and send your request directly to our WhatsApp.</p>
+      <form class="whatsapp-form">
+        <div class="form-grid">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" placeholder="Full name" required></div>
+          <div class="field"><label for="phone">Contact number *</label><input id="phone" name="phone" type="tel" placeholder="Your phone number" required></div>
+          <div class="field full"><label for="service">Service required *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Car key cutting</option><option>Key programming</option><option>Remote programming / repair</option><option>ECU programming</option><option>Key reader replacement</option><option>Immobiliser assistance</option><option>Household locksmith</option><option>Vehicle lockout / emergency assistance</option><option>Other</option></select></div>
+          <div class="field"><label for="make">Vehicle make</label><input id="make" name="make" placeholder="e.g. Toyota"></div>
+          <div class="field"><label for="model">Vehicle model</label><input id="model" name="model" placeholder="e.g. Corolla"></div>
+          <div class="field"><label for="year">Vehicle year</label><input id="year" name="year" placeholder="e.g. 2015"></div>
+          <div class="field"><label for="location">Your location *</label><input id="location" name="location" placeholder="Town / area" required></div>
+          <div class="field full"><label for="details">Additional details</label><textarea id="details" name="details" placeholder="Tell us briefly what happened or what you need..."></textarea></div>
+        </div>
+        <p class="form-note">Your enquiry will open in WhatsApp so you can review and send it. Please do not include sensitive personal information.</p>
+        <button class="btn btn-primary btn-block" type="submit"><i class="fa-brands fa-whatsapp"></i> Send Enquiry on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a class="brand brand-light" href="index.html">
+        <img src="assets/images/footer.png" alt="National Auto Service Key Logo" class="brand-logo">
+        <span><strong>NATIONAL AUTO</strong><small>SERVICE KEY</small></span>
+      </a>
+      <p>Helping drivers get moving again with practical automotive key and locksmith services.</p>
+      <div class="social-row"><a href="https://wa.me/27710756990" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="tel:+27710756990" aria-label="Call"><i class="fa-solid fa-phone"></i></a></div>
+    </div>
+    <div><h4>Explore</h4><a href="services.html">Our Services</a><a href="about.html">About Us</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>
+    <div><h4>Our Services</h4><a href="services.html#car-keys">Car Key Cutting</a><a href="services.html#programming">Key &amp; Remote Programming</a><a href="services.html#ecu">ECU Programming</a><a href="services.html#home-locksmith">Household Locksmith</a></div>
+    <div><h4>Get in touch</h4><a href="tel:+27710756990">071 075 6990</a><a href="https://wa.me/27710756990">WhatsApp Enquiries</a><p>Collins Chabane Dr, Malamulele-A, Malamulele, 0982</p><p>47 Robyn St, Klerksoord AH, Pretoria, 0200</p></div>
+  </div>
+  <div class="footer-bottom"><span>© <span class="year"></span> National Auto Service Key. All rights reserved.</span><span>Automotive keys. Locksmith solutions. Reliable service.</span></div>
+</footer>
+<a class="floating-wa" href="https://wa.me/27710756990?text=Hello%20National%20Auto%20Service%20Key%2C%20I%20need%20assistance." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  /* ===== Mobile menu ===== */
+  var body = document.body,
+      openBtn = document.querySelector('.menu-toggle'),
+      closeBtn = document.querySelector('.menu-close'),
+      overlay = document.querySelector('.mobile-overlay'),
+      sidebar = document.querySelector('.mobile-sidebar');
+  function setMenu(show) {
+    body.classList.toggle('menu-open', show);
+    if (openBtn) openBtn.setAttribute('aria-expanded', String(show));
+    if (sidebar) sidebar.setAttribute('aria-hidden', String(!show));
+  }
+  if (openBtn) openBtn.addEventListener('click', function () { setMenu(true); });
+  if (closeBtn) closeBtn.addEventListener('click', function () { setMenu(false); });
+  if (overlay) overlay.addEventListener('click', function () { setMenu(false); });
+  document.querySelectorAll('.mobile-nav a').forEach(function (a) {
+    a.addEventListener('click', function () { setMenu(false); });
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+  /* ===== Year ===== */
+  document.querySelectorAll('.year').forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+
+  /* ===== AOS ===== */
+  if (window.AOS) AOS.init({ duration: 750, once: true, offset: 70 });
+
+  /* ===== WhatsApp forms ===== */
+  document.querySelectorAll('.whatsapp-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var fields = [
+        ['Name', 'name'], ['Phone', 'phone'], ['Service', 'service'],
+        ['Vehicle make', 'make'], ['Vehicle model', 'model'],
+        ['Year', 'year'], ['Location', 'location'], ['Details', 'details']
+      ];
+      var message = 'Hello National Auto Service Key, I would like to request assistance.%0A%0A';
+      fields.forEach(function (pair) {
+        var v = (data.get(pair[1]) || '').toString().trim();
+        if (v) message += encodeURIComponent(pair[0] + ': ' + v) + '%0A';
+      });
+      window.open('https://wa.me/27710756990?text=' + message, '_blank', 'noopener');
+    });
+  });
+
+  /* ===== Hero slider ===== */
+  var slider = document.querySelector('.hero-slider');
+  if (!slider) return;
+  var slides = slider.querySelectorAll('.hero-slide');
+  var dotsWrap = slider.querySelector('.hero-dots');
+  var prevBtn = slider.querySelector('.hero-arrow.prev');
+  var nextBtn = slider.querySelector('.hero-arrow.next');
+  var current = 0;
+  var timer = null;
+  var INTERVAL = 6000;
+
+  slides.forEach(function (s) {
+    if (s.dataset.bg) s.style.backgroundImage = 'url("' + s.dataset.bg + '")';
+  });
+
+  slides.forEach(function (_, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('role', 'tab');
+    b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    if (i === 0) b.classList.add('is-active');
+    b.addEventListener('click', function () { goTo(i, true); });
+    dotsWrap.appendChild(b);
+  });
+  var dots = dotsWrap.querySelectorAll('button');
+
+  function goTo(i, user) {
+    slides[current].classList.remove('is-active');
+    dots[current].classList.remove('is-active');
+    current = (i + slides.length) % slides.length;
+    slides[current].classList.add('is-active');
+    dots[current].classList.add('is-active');
+    if (user) restart();
+  }
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+  function start() { stop(); timer = setInterval(next, INTERVAL); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+  function restart() { start(); }
+
+  nextBtn.addEventListener('click', function () { next(); restart(); });
+  prevBtn.addEventListener('click', function () { prev(); restart(); });
+  slider.addEventListener('mouseenter', stop);
+  slider.addEventListener('mouseleave', start);
+  slider.addEventListener('focusin', stop);
+  slider.addEventListener('focusout', start);
+  slider.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { next(); restart(); }
+    if (e.key === 'ArrowLeft') { prev(); restart(); }
+  });
+
+  var sx = 0;
+  slider.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', function (e) {
+    var dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 40) { if (dx < 0) next(); else prev(); restart(); }
+  });
+
+  start();
+});
+</script>
+</body>
+</html>
