@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Explore car key cutting, key and remote programming, ECU programming, key reader replacement and household locksmith services.">
+<meta name="description" content="Explore car key cutting, key and remote programming, ECU programming, key reader replacement, household locksmith services, school uniforms, and custom printing.">
 <meta name="theme-color" content="#101820">
 <meta name="robots" content="index,follow">
 <title>Our Services | National Auto Service Key</title>
@@ -71,6 +71,10 @@ h3{font-size:21px}
 
 .text-link{font-size:13px;font-weight:800;display:inline-flex;align-items:center;gap:8px}
 .text-link i{color:#c18b08}
+
+/* ===== PRINTING SECTION SPECIFIC GRID ===== */
+.printing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.printing-grid .photo-card-media{aspect-ratio:1/1;} /* Square images */
 
 /* ===== SPLIT SECTIONS ===== */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
@@ -159,6 +163,13 @@ h3{font-size:21px}
   .footer-brand{grid-column:1/-1}
   .footer-bottom{flex-direction:column}
 }
+@media(max-width:480px){
+  /* Keep printing cards 2 columns even on small mobile */
+  .printing-grid{grid-template-columns:1fr 1fr; gap: 12px;}
+  .printing-grid .photo-card-body{padding:15px;}
+  .printing-grid .photo-card-body h3{font-size:16px;}
+  .printing-grid .photo-card-body p{font-size:12px;}
+}
 @media(max-width:390px){
   .footer-main{grid-template-columns:1fr}
   .footer-brand{grid-column:auto}
@@ -221,6 +232,8 @@ html, body {
     <p>Need help with a key?</p>
     <a class="btn btn-primary btn-block" href="https://wa.me/27710756990?text=Hello%20National%20Auto%20Service%20Key%2C%20I%20need%20assistance." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
     <a class="sidebar-phone" href="tel:+27710756990"><i class="fa-solid fa-phone"></i> 071 075 6990</a>
+    <a class="sidebar-phone" href="tel:+27732827444"><i class="fa-solid fa-phone"></i> 073 282 7444</a>
+    <a class="sidebar-phone" href="tel:+27781345675"><i class="fa-solid fa-phone"></i> 078 134 5675</a>
   </div>
 </aside>
 
@@ -231,7 +244,7 @@ html, body {
     <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
     <span class="eyebrow">What we can help with</span>
     <h1>Our Services</h1>
-    <p>Automotive key, electronic programming and household locksmith solutions from one point of contact.</p>
+    <p>Automotive key, electronic programming, household locksmith solutions, and custom printing services from one point of contact.</p>
   </div>
 </section>
 
@@ -313,7 +326,69 @@ html, body {
   </div>
 </section>
 
-<section class="section feature-band">
+<!-- ===== NEW PRINTING & UNIFORM SERVICES SECTION (UPDATED TO 2 COLS & 1:1 IMAGES) ===== -->
+<section class="section feature-band" id="printing-services">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="eyebrow">Printing &amp; Embroidery</span>
+      <h2>Quality Stitches &amp; Lasting Impressions.</h2>
+      <p>We also offer a full range of printing, embroidery, and school uniform services for individuals, schools, and businesses.</p>
+    </div>
+    
+    <!-- Added .printing-grid class for 2-column layout and 1:1 images -->
+    <div class="photo-cards printing-grid">
+      <article class="photo-card" data-aos="fade-up">
+        <div class="photo-card-media">
+          <img src="assets/images/uniform.png" alt="School uniforms" loading="lazy">
+        </div>
+        <div class="photo-card-body">
+          <span class="tag">School Uniforms</span>
+          <h3>For All Your School Needs</h3>
+          <p>Shirts, trousers, skirts, blazers, sweaters, ties, socks, shoes, bags, and caps.</p>
+          <a class="text-link" href="index.html#quick-enquiry">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="photo-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="photo-card-media">
+          <img src="assets/images/embroidery.png" alt="Embroidery service" loading="lazy">
+        </div>
+        <div class="photo-card-body">
+          <span class="tag">Embroidery</span>
+          <h3>Quality Stitches &amp; Lasting Impressions</h3>
+          <p>Corporate uniforms, workwear, caps, bags, towels, and personalised gifts.</p>
+          <a class="text-link" href="index.html#quick-enquiry">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="photo-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="photo-card-media">
+          <img src="assets/images/printing.png" alt="Sublimation printing" loading="lazy">
+        </div>
+        <div class="photo-card-body">
+          <span class="tag">Sublimation Printing</span>
+          <h3>Bring Your Ideas to Life</h3>
+          <p>T-shirt printing, hoodies, mug printing, water bottles, phone cases, and key rings.</p>
+          <a class="text-link" href="index.html#quick-enquiry">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="photo-card" data-aos="fade-up">
+        <div class="photo-card-media">
+          <img src="assets/images/tshirts.png" alt="T-shirt printing company" loading="lazy">
+        </div>
+        <div class="photo-card-body">
+          <span class="tag">T-Shirt Printing</span>
+          <h3>Custom T-Shirt Printing Company</h3>
+          <p>Polo shirts, hoodies, workwear, caps, bags, aprons, and other items.</p>
+          <a class="text-link" href="index.html#quick-enquiry">Enquire <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="container split">
     <img class="feature-image" src="assets/images/locked.jpg" alt="Close-up of keys and lock mechanism" data-aos="fade-right">
     <div data-aos="fade-left">
@@ -378,13 +453,23 @@ html, body {
         <span><strong>NATIONAL AUTO</strong><small>SERVICE KEY</small></span>
       </a>
       <p>Helping drivers get moving again with practical automotive key and locksmith services.</p>
-      <div class="social-row"><a href="https://wa.me/27710756990" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="tel:+27710756990" aria-label="Call"><i class="fa-solid fa-phone"></i></a></div>
+      <div class="social-row">
+        <a href="https://wa.me/27710756990" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:+27710756990" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://www.facebook.com/p/National-Auto-Service-100034328929331/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
     </div>
     <div><h4>Explore</h4><a href="services.html">Our Services</a><a href="about.html">About Us</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div>
-    <div><h4>Our Services</h4><a href="services.html#car-keys">Car Key Cutting</a><a href="services.html#programming">Key &amp; Remote Programming</a><a href="services.html#ecu">ECU Programming</a><a href="services.html#home-locksmith">Household Locksmith</a></div>
-    <div><h4>Get in touch</h4><a href="tel:+27710756990">071 075 6990</a><a href="https://wa.me/27710756990">WhatsApp Enquiries</a><p>Collins Chabane Dr, Malamulele-A, Malamulele, 0982</p><p>47 Robyn St, Klerksoord AH, Pretoria, 0200</p></div>
+    <div><h4>Our Services</h4><a href="services.html#car-keys">Car Key Cutting</a><a href="services.html#programming">Key &amp; Remote Programming</a><a href="services.html#ecu">ECU Programming</a><a href="services.html#home-locksmith">Household Locksmith</a><a href="services.html#printing-services">School Uniforms</a><a href="services.html#printing-services">Printing &amp; Embroidery</a></div>
+    <div><h4>Get in touch</h4>
+      <a href="tel:+27710756990">071 075 6990</a>
+      <a href="tel:+27732827444">073 282 7444</a>
+      <a href="tel:+27781345675">078 134 5675</a>
+      <a href="https://wa.me/27710756990">WhatsApp Enquiries</a>
+      <p>Collins Chabane Dr, Malamulele-A, Malamulele, 0982</p><p>47 Robyn St, Klerksoord AH, Pretoria, 0200</p>
+    </div>
   </div>
-  <div class="footer-bottom"><span>© <span class="year"></span> National Auto Service Key. All rights reserved.</span><span>Automotive keys. Locksmith solutions. Reliable service.</span></div>
+  <div class="footer-bottom"><span>© <span class="year"></span> National Auto Service Key. All rights reserved.</span><span>Automotive keys. Locksmith solutions. Printing &amp; Uniforms.</span></div>
 </footer>
 <a class="floating-wa" href="https://wa.me/27710756990?text=Hello%20National%20Auto%20Service%20Key%2C%20I%20need%20assistance." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
